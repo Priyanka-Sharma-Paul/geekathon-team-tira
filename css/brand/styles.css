@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+/* General container styling */
+.container {
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.filters-container {
+    position:sticky;
+    top: 50px;
+    left: 50px;
+    width: 270px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    height: fit-content;
+    overflow-y: hidden;
+    border-radius: 10px;
+}
+
+.filters-container h3 {
+    margin-bottom: 20px;
+}
+
+.filter {
+    margin-bottom: 20px;
+}
+
+.filter-title {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    
+}
+
+.filter-options {
+    display: none;
+    padding: 10px 0;
+}
+
+.filter-options label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.filter-options input {
+    margin-right: 10px;
+}
+
+.filter-title.active + .filter-options {
+    display: block;
+}
+
+.filtered-product {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 2px; */
+    width: calc(100% - 240px); /* Adjust the width considering the filters-container width and gap */
+    /* height: calc(100vh - 140px); Adjust the height to fit within the viewport minus margins */
+    /* overflow-y: auto; Enable vertical scrolling */
+}
+
+.flex-item {
+    flex: 1 1 calc(33.333% - 20px); /* Adjust the width to ensure 3 items per row */
+    background-color: white;
+    color: black;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    /* border: 1px solid #ccc; */
+}
+
+.flex-item button {
+    border: none;
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+    background-color:black;
+    color: white;
+    font-size:medium;
+    visibility: hidden;
+}
+ .flex-item:hover{
+    button{
+        visibility: visible;
+
+    }
+ }
+hr{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.info-section {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tira-info {
+    display: inline-block;
+    margin: 0 20%;
+    /* border: 2px solid black; */
+    padding:20px;
+    text-align: center;
+}
+
+.tira-info h2 {
+    padding-left: 10%;
+    text-align: left;
+}
+
+.info-child {
+    margin: 20px 0;
+}
+
+.email-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* border: 2px solid black; */
+    padding: 10px;
+}
+
+
+.email-box input {
+    height: 40px;
+    width: 360px;
+    background-color: aquamarine;
+    border: none;
+    padding: 0 10px;
+    flex: 1;
+}
+
+.email-box button {
+    height: 40px;
+    width: 120px;
+    background-color: cadetblue;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    /* border-top: 1px solid #ccc; */
+    margin: 10px 10%; /* Match the margin of tira-info for alignment */
+    box-sizing: border-box;
+}
+
+.down-column {
+    flex: 1;
+    padding: 0 20px;
+}
+.down-column img{
+    height: 25px;
+    width: 40px;
+}
+.down-column h3 {
+    margin-bottom: 10px;
+}
+
+.down-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.down-column ul li {
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+
+
+
+.anchor-section{
+    width: 100vw;
+}
+.anchor-section ul li{
+    display: inline;
+    padding: 2px;
+    list-style: none;
+    
+}
+.anchor-section ul li a{
+    color: gray;
+    text-decoration: none;
+}
+
+.anchor-section ul li a svg{
+    /* display: inline-block; */
+    /* padding-left: 15px; */
+    height: 15px;
+    width: 15px;
+}
+
+@media only screen and (max-width: 640px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .filters-container {
+        position: static;
+    }
+
+}
