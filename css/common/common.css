@@ -60,6 +60,10 @@ nav .container, #footer .container{
     width:95%;
 }
 
+nav .hf-container, #footer .hf-container{
+    width:95%;
+}
+
 .small-container {
     width:92%;
 }

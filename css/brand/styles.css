@@ -193,17 +193,8 @@ hr{
     font-weight: bold;
 }
 
-.footer-wrapper{
-    display: inline-block;
-    margin: 0 10%;
-    /* border: 2px solid black; */
-    height: auto;
-    width: auto;
-}
 
-.copyright p{
-    text-align: start;
-}
+
 .anchor-section{
     width: 100vw;
 }
