@@ -182,6 +182,12 @@ nav{
     flex-wrap: wrap;
 }
 
+.navbar-mobile {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: none;
+}
+
 .navbar-link {
     padding: 16px 0px;
     font-style: normal;
@@ -1038,6 +1044,10 @@ nav{
 
     .link-container, .navbar-3, .navbar-1 {
         display: none;
+    }
+
+    .navbar-mobile {
+        display: flex;
     }
 
     .footer {
