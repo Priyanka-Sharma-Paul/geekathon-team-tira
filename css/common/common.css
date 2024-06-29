@@ -63,7 +63,7 @@
 
 }
 
-.container {
+nav .container, #footer .container{
     width:95%;
 }
 
