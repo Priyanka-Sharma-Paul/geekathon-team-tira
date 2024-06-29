@@ -49,6 +49,8 @@
 
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     scroll-behavior: smooth !important;
 }
 
@@ -70,7 +72,7 @@
 }
 
 .full-container {
-    width:99.7%;
+    width:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,13 +80,13 @@
     margin-top: 50px;
 }
 
-a {
+nav a, #footer a {
     text-decoration: none;
     font-family: "PP Object sans", sans-serif;
     color: inherit;
 }
 
-hr {
+#footer hr {
     border: 0;
     border-top: 1px solid #dbdadb;
 }
